@@ -163,7 +163,7 @@ nav {
   margin-left: auto;
   border: none;
   cursor: pointer;
-  background-image: url(/svg/basket.svg);
+  background-image: url(../svg/basket.svg);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -171,7 +171,7 @@ nav {
 }
 
 .basket:hover {
-  background-image: url(/svg/basket_arr.svg);
+  background-image: url(../svg/basket_arr.svg);
 }
 
 .visually-hidden {
@@ -620,15 +620,15 @@ address {
 }
 
 .link-facebook {
-  background-image: url(/svg/fasebook.svg);
+  background-image: url(../svg/fasebook.svg);
 }
 
 .link-instagram {
-  background-image: url(/svg/ins.svg);
+  background-image: url(../svg/ins.svg);
 }
 
 .link-youtube {
-  background-image: url(/svg/youtube.svg);
+  background-image: url(../svg/youtube.svg);
 }
 
 .link-facebook:hover,
