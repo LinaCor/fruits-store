@@ -1,0 +1,220 @@
+/*обнулление стилей*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/*обнулление стилей*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #AE1332;
+}
+
+.content {
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  color: #AE1332;
+  background-color: #FFFFFF;
+}
+
+.navigation {}
+
+.navigation__item {}
+
+.logo {}
+
+.basket {}
+
+main {
+  /*flex-grow: 1;*/
+}
+
+.legend {}
+
+.legend__header {}
+
+.promo {}
+
+.card-left {}
+
+.card__fruit {}
+
+.card-right {}
+
+.card-right__tags {}
+
+.legend__button {}
+
+.instruction {}
+
+.instruction__header {}
+
+.instruction__discr {}
+
+.instruction__list {}
+
+.instruction__list__item {}
+
+.instruction__img {}
+
+.store {}
+
+.store__header {}
+
+.store__discr {}
+
+.fruits {}
+
+.fruits__item {}
+
+.straw {}
+
+.bnan {}
+
+.wtrmel {}
+
+.lime {}
+
+.appl {}
+
+.pch {}
+
+.plms {}
+
+.orng {}
+
+.kiw {}
+
+.store__btn {}
+
+.order {}
+
+.order__img {}
+
+.order__discr {}
+
+.send-mail {}
+
+.send-mail__inpt {}
+
+.send-mail__btn {}
+
+footer {
+  /*flex-shrink: 0;*/
+}
+
+.footer {}
+
+.footer__logo {}
+
+.footer-nav {}
+
+.social {}
+
+.social-item {}
+
+.icon-social {}
+
+.link-facebook {}
+
+.visually-hidden {}
+
+.link-instagram {}
+
+.link-youtube {}
