@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruits</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -13,9 +17,9 @@
     <header>
       <nav>
         <ul class="navigation">
-          <li class="navigation__item"><a href="">How It Works</a></li>
-          <li class="navigation__item"><a href="">Fruits</a></li>
-          <li class="navigation__item"><a href="">Contacts</a></li>
+          <li class="navigation__item"><a href="#manual">How It Works</a></li>
+          <li class="navigation__item"><a href="#choice">Fruits</a></li>
+          <li class="navigation__item"><a href="#Contacts">Contacts</a></li>
         </ul>
         <div class="logo">
           <a href="#0"><img src="/svg/nav.svg" alt=""></a>
@@ -29,20 +33,23 @@
 
     <main>
       <section class="legend">
-        <h1 class="legend__header">fresh harvest box
+        <h1 class="legend__header">fresh harvest box<br>
           is your one-stop place for a delicious fruit basket</h1>
+        <button class="legend__button">
+          <p>shop now</p>
+        </button>
         <div class="promo">
           <div class="card-left">
             <p>Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether
               you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
-            <div class="card__fruit">
+            <div class="card-left__fruit card__fruit">
               <h2>Fruit</h2>
               <img src="/img/watermelon.png" alt="">
               <p>Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
             </div>
           </div>
           <div class="card-right">
-            <div class="card__fruit">
+            <div class="card-right__fruit card__fruit">
               <h2>Fruit</h2>
               <img src="/img/order_1.png" alt="">
               <p>Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and
@@ -56,9 +63,8 @@
             </ul>
           </div>
         </div>
-        <div class="legend__button">shopnow</div>
       </section>
-      <section class="instruction">
+      <section class="instruction" id="manual">
         <h2 class="instruction__header">To order your fruit basket, simply follow these easy steps</h2>
         <p class="instruction__discr">Our baskets are assembled with care and delivered straight to your doorstep, so
           you
@@ -68,21 +74,23 @@
           fruit baskets are the perfect choice.</p>
         <ul class="instruction__list">
           <li class="instruction__list__item">
-            <p>First Step</p>
+            <span class="first__item">First Step</span>
             <p>Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
           </li>
           <li class="instruction__list__item">
-            <p>First Step</p>
-            <p>Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
+            <span class="second__item">Second Step</span>
+            <p>Click on the basket and fill out the form.</p>
           </li>
           <li class="instruction__list__item">
-            <p>First Step</p>
-            <p>Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
+            <span class="thired__item">Third Step</span>
+            <p>Sit back and relax! Your fresh fruit basket will be delivered.</p>
           </li>
         </ul>
-        <img class="instruction__img" src="/img/decorate_1.jpg" alt="fruit photo">
+        <div class="instruction__img">
+          <img src="/img/decorate_1.jpg" alt="fruit photo">
+        </div>
       </section>
-      <section class="store">
+      <section class="store" id="choice">
         <h2 class="store__header">ORGANIC fRUITS</h2>
         <p class="store__discr">Our organic fruits are hand-picked from local farms and delivered straight to your
           doorstep, ensuring that you
@@ -93,68 +101,85 @@
           <li class="fruits__item straw">
             <h2>Strawberry</h2>
             <p>Plant</p>
-            <img src="/img/strawberry.png" alt="Strawberry">
+            <div>
+              <img src="/img/strawberry.png" alt="Strawberry">
+            </div>
             <button>100 UAH / kg</button>
           </li>
           <li class="fruits__item bnan">
             <h2>Banana</h2>
             <p>Plant</p>
-            <img src="/img/banana.png" alt="Banana">
+            <div>
+              <img src="/img/banana.png" alt="Banana">
+            </div>
             <button>80 UAH / kg</button>
           </li>
           <li class="fruits__item wtrmel">
             <h2>Watermelon</h2>
             <p>Plant</p>
-            <img src="/img/watermelon.png" alt="Watermelon">
+            <div>
+              <img src="/img/watermelon.png" alt="Watermelon">
+            </div>
             <button>40 UAH / kg</button>
           </li>
           <li class="fruits__item lime">
             <h2>Lime</h2>
             <p>Plant</p>
-            <img src="/img/lime.png" alt="Lime">
+            <div>
+              <img src="/img/lime.png" alt="Lime">
+            </div>
             <button>60 UAH / kg</button>
           </li>
           <li class=" fruits__item appl">
             <h2>Apple</h2>
             <p>Plant</p>
-            <img src="/img/apple.png" alt="Apple">
+            <div>
+              <img src="/img/apple.png" alt="Apple">
+            </div>
             <button>50 UAH / kg</button>
           </li>
           <li class="fruits__item pch">
             <h2>Peach</h2>
             <p>Plant</p>
-            <img src="/img/peach.png" alt="Peach">
+            <div>
+              <img src="/img/peach.png" alt="Peach">
+            </div>
             <button>80 UAH / kg</button>
           </li>
           <li class="fruits__item plms">
             <h2>Plums</h2>
             <p>Plant</p>
-            <img src="/img/plum.png" alt="Plums">
+            <div>
+              <img src="/img/plum.png" alt="Plums">
+            </div>
             <button>40 UAH / kg</button>
           </li>
           <li class="fruits__item orng">
             <h2>Orange</h2>
             <p>Plant</p>
-            <img src="/img/orange.png" alt="Orange">
+            <div>
+              <img src="/img/orange.png" alt="Orange">
+            </div>
             <button>60 UAH / kg</button>
           </li>
           <li class="fruits__item kiw">
             <h2>Kiwi</h2>
             <p>Plant</p>
-            <img src="/img/kiwi.png" alt="Kiwi">
+            <div>
+              <img src="/img/kiwi.png" alt="Kiwi">
+            </div>
             <button>90 UAH / kg</button>
           </li>
         </ul>
         <button class="store__btn">
-          <img src="/svg/arrow.svg" alt="">
-          <p>ORDER</p>
+          <div class="store__btn__text">
+            <img src="/svg/arrow.svg" alt="">
+            <p>ORDER</p>
+          </div>
         </button>
       </section>
       <section class="order">
-        <div class="order__img">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
+        <h2 class="order__header"> Fresh Harvest Box has got you covered</h2>
         <p class="order__discr">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
           anyone
           looking to eat healthier or support local farmers. Order your box today and start enjoying the best that
@@ -162,26 +187,26 @@
           has to offer!
         </p>
         <form class="send-mail">
-          <input type="mail" name="" id="" class="send-mail__inpt">
+          <input type="mail" name="" id="" class="send-mail__inpt" placeholder="Enter email...">
           <button class="send-mail__btn">send</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <div class="footer">
+      <div class="footer" id="Contacts">
         <div class="footer__logo">
           <img src="/img/footer_girls.png" alt="">
           <div class="logo">
-            <img src="/svg/nav.svg" alt="">
+            <a href=""><img src="/svg/nav.svg" alt=""></a>
             <p>fresh harvest box</p>
           </div>
         </div>
         <div class="footer-nav">
           <ul class="navigation">
-            <li class="navigation__item"><a href="">How It Works</a></li>
-            <li class="navigation__item"><a href="">Fruits</a></li>
-            <li class="navigation__item"><a href="">Contacts</a></li>
+            <li class="navigation__item"><a href="#manual">How It Works</a></li>
+            <li class="navigation__item"><a href="#choice">Fruits</a></li>
+            <li class="navigation__item"><a href="#Contacts">Contacts</a></li>
           </ul>
         </div>
         <address>
