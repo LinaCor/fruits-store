@@ -116,7 +116,6 @@ header {
 nav {
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
   padding: 16px 32px;
 }
 
@@ -157,7 +156,9 @@ nav {
   margin-right: 8px;
 }
 
-.basket {
+.basket,
+.menu__burger,
+.basket__mobile {
   max-width: 28px;
   width: 100%;
   min-height: 28px;
@@ -169,6 +170,17 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #FFFFFF;
+}
+
+.menu__burger {
+  display: none;
+  background-image: url(../svg/menu-mobile.svg);
+  background-size: 24px;
+}
+
+.basket__mobile {
+  background-image: url(../svg/basket-mobile.svg);
+  background-color: #AE1332;
 }
 
 .basket:hover {
@@ -184,6 +196,11 @@ nav {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.nav__mobile,
+.navigation__mobile {
+  display: none;
 }
 
 .legend {
@@ -211,13 +228,12 @@ nav {
   border-radius: 50%;
   background-color: #FFFFFF;
   position: absolute;
-  /*left: 45%;
-  top: 70%;*/
   left: 46%;
   top: 750px;
 }
 
-.legend__button>p {
+.legend__button>a {
+  display: block;
   font-size: 28px;
   font-weight: 500;
   line-height: 28px;
@@ -227,7 +243,7 @@ nav {
   transform: rotate(-25deg);
 }
 
-.legend__button>p:hover {
+.legend__button>a:hover {
   transition: 1s;
   color: #A4CB66;
 }
@@ -237,9 +253,12 @@ nav {
   justify-content: space-between;
 }
 
+.card-right,
 .card-left {
-  max-width: 270px;
-  padding-top: 72px;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-left>p {
@@ -268,6 +287,8 @@ nav {
 }
 
 .card__fruit>img {
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   margin-bottom: 2px;
 }
@@ -281,9 +302,6 @@ nav {
 }
 
 .card-right {
-  max-width: 310px;
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
 }
 
@@ -410,10 +428,17 @@ nav {
   max-height: 476px;
 }
 
-.instruction__img>img {
+.instruction__img__mobile {
+  max-width: 860px;
+  min-height: 476px;
+  display: none;
+}
+
+.instruction__img>img,
+.instruction__img__mobile>img {
   width: 100%;
   height: 100%;
-  display: block;
+  display: inline-block;
   border-radius: 20px;
 }
 
@@ -433,6 +458,8 @@ nav {
 .fruits__item {
   max-width: 390px;
   width: 100%;
+  max-height: 465px;
+  height: 100%;
   padding: 64px 24px 24px;
   margin-right: 23px;
   margin-bottom: 24px;
@@ -553,8 +580,6 @@ nav {
   align-items: center;
   padding: 75px 32px 150px;
   background: url(../img/decorate_3.png) no-repeat 50% 165px;
-  /*background: url(../img/decorate_3.png) no-repeat 32px 165px,
-    url(../img/decorate_2.png) no-repeat 100% 165px;*/
 }
 
 .order__header {
@@ -612,6 +637,8 @@ nav {
 }
 
 .footer__logo>img {
+  width: 100%;
+  height: 100%;
   margin-bottom: 20px;
 }
 
@@ -733,7 +760,7 @@ address>p {
   }
 
   .card-left {
-    margin-top: 25px;
+    margin-top: 100px;
     margin-bottom: 15px;
   }
 
@@ -764,6 +791,12 @@ address>p {
     margin-bottom: 15px;
   }
 
+
+  .logo__footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .footer {
     flex-wrap: wrap;
     justify-content: center;
@@ -780,4 +813,128 @@ address>p {
   }
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+
+  nav {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  .menu__burger {
+    display: block;
+  }
+
+  .basket__mobile {
+    margin-right: auto;
+  }
+
+  .nav__mobile {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 124px;
+    background-color: #AE1332;
+  }
+
+  .navigation__mobile {
+    max-width: 78px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navigation__mobile>.navigation__item__mobile>a {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+
+  .legend {
+    padding: 56px 20px 40px;
+    background: url(../img/hero_girls-mobile.png) no-repeat 50% 100px;
+  }
+
+  .legend__header,
+  .instruction__header,
+  .order__header,
+  .store__header {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .legend__button {
+    width: 85px;
+    height: 85px;
+    left: 40%;
+    top: 550px;
+  }
+
+  .legend__button>p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .card-left {
+    padding-top: 0;
+    margin-bottom: 44px;
+    margin-top: 0;
+  }
+
+  .card-right__fruit {
+    order: 1;
+    margin-bottom: 0px;
+  }
+
+  .card-right__tags {
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+
+  .instruction {
+    padding: 40px 20px;
+  }
+
+  .instruction__img {
+    display: none;
+  }
+
+  .instruction__img__mobile {
+    display: block;
+  }
+
+  .store {
+    padding: 40px 20px;
+  }
+
+  .fruits__item {
+    max-width: 335px;
+  }
+
+  .order {
+    padding: 40px 20px 80px;
+    background: url(../img/decorate_4.png) no-repeat 50% 165px;
+  }
+
+  .order__discr,
+  .send-mail {
+    display: none;
+  }
+
+  .footer {
+    padding: 60px 20px;
+  }
+}
