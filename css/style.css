@@ -158,8 +158,9 @@ nav {
 }
 
 .basket {
-  width: 28px;
-  height: 28px;
+  max-width: 28px;
+  width: 100%;
+  min-height: 28px;
   margin-left: auto;
   border: none;
   cursor: pointer;
@@ -183,10 +184,6 @@ nav {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-main {
-  /*flex-grow: 1;*/
 }
 
 .legend {
@@ -214,8 +211,10 @@ main {
   border-radius: 50%;
   background-color: #FFFFFF;
   position: absolute;
-  left: 45%;
-  top: 70%;
+  /*left: 45%;
+  top: 70%;*/
+  left: 46%;
+  top: 750px;
 }
 
 .legend__button>p {
@@ -348,10 +347,11 @@ main {
 
 .instruction__list__item {
   max-width: 390px;
+  min-height: 128px;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 37px 20px;
+  padding: 0 20px;
   border-radius: 20px;
   background-color: #FFFFFF;
 }
@@ -400,6 +400,8 @@ main {
 }
 
 .instruction__list__item>p {
+  max-width: 170px;
+  width: 100%;
   color: #000000;
 }
 
@@ -595,10 +597,6 @@ main {
   background-color: #7b974f;
 }
 
-footer {
-  /*flex-shrink: 0;*/
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -709,3 +707,77 @@ address>p {
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 768px) {
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 110px;
+  }
+
+  .legend__header,
+  .order__header {
+    font-size: 50px;
+  }
+
+  .legend__button {
+    left: 42%;
+  }
+
+  .promo {
+    margin-top: 500px;
+    flex-wrap: wrap;
+  }
+
+  .card-left {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .card-left,
+  .card-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-right {
+    align-items: center;
+  }
+
+  .fruits {
+    max-width: 656px;
+  }
+
+  .fruits>.fruits__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fruits__item {
+    max-width: 320px;
+  }
+
+  .fruits__item>button {
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav {
+    order: 1;
+  }
+
+  .footer__logo,
+  .footer-nav,
+  address {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 375px) {}
