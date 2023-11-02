@@ -122,47 +122,49 @@ body {
   align-items: center;
 }
 
-.popup-content {
+.popup-form {
   max-width: 890px;
   width: 100%;
-  min-height: 500px;
   padding: 40px;
-  background-color: #FFFFFF;
+  background: #FFFFFF url(../img/order_girls.png) no-repeat 100% 100%/470px;
   border-radius: 20px;
 }
 
-.popup-content__head {
+.popup-form__head {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.popup-content__head>h2 {
+.popup-form__head>h2 {
   font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
   color: #AE1332;
 }
 
-.popup-content__close {
+.popup-form__close,
+.popup-order__close {
   max-width: 28px;
   width: 100%;
   min-height: 28px;
   border: none;
   cursor: pointer;
-  background: #FFFFFF url(../svg/x.svg) no-repeat center/cover;
+  background: #FFFFFF url(../svg/x.svg) no-repeat center/20px;
 }
 
-.popup-content__order {
+.popup-form__order {
   margin-bottom: 40px;
 }
 
-.popup-content__fruits {
+.popup-form__fruits {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.popup-content__fruits__item {
+.popup-form__fruits__item {
   max-width: 257px;
   width: 100%;
   max-height: 308px;
@@ -171,17 +173,22 @@ body {
   border-radius: 20px;
 }
 
-.popup-content__fruits__item>h2 {
+.item__contect {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__contect>h2 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.popup-content__fruits__item>p {
+.item__contect>p {
   margin-bottom: 4px;
 }
 
-.popup-content__fruits__item>div {
+.item__contect__img {
   max-width: 230px;
   width: 100%;
   max-height: 196px;
@@ -189,18 +196,18 @@ body {
   margin-bottom: 5px;
 }
 
-.popup-content__fruits__item>div>img {
+.item__contect__img>img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.popup-content__form {
+.popup-form__form {
   max-width: 360px;
 }
 
-.popup-content__form>input,
-.popup-content__form>textarea {
+.popup-form__form>input,
+.popup-form__form>textarea {
   width: 100%;
   min-height: 48px;
   margin-bottom: 14px;
@@ -210,14 +217,14 @@ body {
   opacity: 0.3;
 }
 
-.popup-content__form>textarea {
+.popup-form__form>textarea {
   padding: 15px 24px;
   margin-bottom: 20px;
   border-radius: 20px;
   resize: none;
 }
 
-.popup-content__btn,
+.popup-form__btn,
 .send-mail__btn {
   padding: 15px 35px;
   color: #FFFFFF;
@@ -226,10 +233,58 @@ body {
   right: 0;
 }
 
-.popup-content__btn:hover,
+.popup-form__btn:hover,
 .send-mail__btn:hover {
   transition: 0.5s;
   background-color: #7b974f;
+}
+
+.popup-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #E03F5E;
+  border-radius: 20px;
+}
+
+.popup-order__close {
+  margin-left: auto;
+  margin-bottom: 20px;
+  background: #E03F5E url(../svg/x-white.svg) no-repeat center/20px;
+}
+
+.popup-order__img {
+  max-width: 280px;
+  width: 100%;
+  max-height: 240px;
+  height: 100%;
+  margin-bottom: 28px;
+}
+
+.popup-order__img>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-order>h2 {
+  margin-bottom: 14px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+}
+
+.popup-order>p {
+  max-width: 390px;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: -0.56px;
 }
 
 header {
@@ -732,7 +787,6 @@ nav {
   position: absolute;
 }
 
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -848,6 +902,10 @@ address>p {
 
 @media (max-width: 768px) {
 
+  .popup-content {
+    background: #FFFFFF url(../img/order_girls.png) no-repeat 100% 100%/270px;
+  }
+
   .navigation {
     flex-wrap: wrap;
   }
@@ -925,6 +983,26 @@ address>p {
 }
 
 @media (max-width: 375px) {
+
+  .popup-form__head>h2 {
+    font-size: 28px;
+  }
+
+  .popup-form__fruits__item {
+    display: flex;
+    max-width: 100%;
+    max-height: 120px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .popup-form__fruits__item>h2 {
+    font-size: 18px;
+  }
+
+  .popup-form {
+    background: #FFFFFF;
+  }
 
   nav {
     padding: 16px 20px;

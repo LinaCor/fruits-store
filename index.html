@@ -14,44 +14,60 @@
 
 <body>
   <div class="content">
-    <div class="popup-mask">
-      <div class="popup-content">
-        <div class="popup-content__head">
+    <div class="popup-mask visually-hidden">
+      <div class="popup-form visually-hidden">
+        <div class="popup-form__head">
           <h2>Your Order</h2>
-          <button type="button" class="popup-content__close"></button>
+          <button type="button" class="popup-form__close"></button>
         </div>
-        <div class="popup-content__order">
-          <ul class="popup-content__fruits">
-            <li class="popup-content__fruits__item straw">
-              <h2>Strawberry</h2>
-              <p>Plant</p>
-              <div>
+        <div class="popup-form__order">
+          <ul class="popup-form__fruits">
+            <li class="popup-form__fruits__item straw">
+              <div class="item__contect">
+                <h2>Strawberry</h2>
+                <p>Plant</p>
+              </div>
+              <div class="item__contect__img">
                 <img src="img/strawberry.png" alt="Strawberry">
               </div>
             </li>
-            <li class="popup-content__fruits__item straw">
-              <h2>Strawberry</h2>
-              <p>Plant</p>
-              <div>
+            <li class="popup-form__fruits__item straw">
+              <div class="item__contect">
+                <h2>Strawberry</h2>
+                <p>Plant</p>
+              </div>
+              <div class="item__contect__img">
                 <img src="img/strawberry.png" alt="Strawberry">
               </div>
             </li>
-            <li class="popup-content__fruits__item straw">
-              <h2>Strawberry</h2>
-              <p>Plant</p>
-              <div>
+            <li class="popup-form__fruits__item straw">
+              <div class="item__contect">
+                <h2>Strawberry</h2>
+                <p>Plant</p>
+              </div>
+              <div class="item__contect__img">
                 <img src="img/strawberry.png" alt="Strawberry">
               </div>
             </li>
           </ul>
         </div>
-        <form action="" class="popup-content__form">
+        <form class="popup-form__form">
           <input type="text" name="name" placeholder="Enter full name...">
           <input type="email" name="email" placeholder="Enter email...">
           <input type="text" name="card" placeholder="Enter card..">
           <textarea name="comment" placeholder="Enter comments..."></textarea>
-          <button type="submit" class="popup-content__btn">Submit</button>
+          <button type="submit" class="popup-form__btn">Submit</button>
         </form>
+      </div>
+      <div class="popup-order visually-hidden">
+        <button type="button" class="popup-order__close"></button>
+        <div class="popup-order__img">
+          <img src="img/popup.png" alt="Strawberry">
+        </div>
+        <h2>tHANK YOU</h2>
+        <p>Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and
+          we'll deliver it straight to your doorstep. We appreciate your business and look forward to providing you
+          with the best possible experience!</p>
       </div>
     </div>
     <header>
