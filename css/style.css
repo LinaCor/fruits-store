@@ -164,7 +164,7 @@ body {
   gap: 12px;
 }
 
-.popup-form__fruits__item {
+.popup-form__fruits-item {
   max-width: 257px;
   width: 100%;
   max-height: 308px;
@@ -188,7 +188,7 @@ body {
   margin-bottom: 4px;
 }
 
-.item__contect__img {
+.popup-form__contect-img {
   max-width: 230px;
   width: 100%;
   max-height: 196px;
@@ -196,7 +196,7 @@ body {
   margin-bottom: 5px;
 }
 
-.item__contect__img>img {
+.popup-form__contect-img>img {
   display: block;
   width: 100%;
   height: 100%;
@@ -211,7 +211,7 @@ body {
   width: 100%;
   min-height: 48px;
   margin-bottom: 14px;
-  padding-left: 24px;
+  padding: 0 24px;
   border: 1px solid #000;
   border-radius: 100px;
   opacity: 0.3;
@@ -231,11 +231,11 @@ body {
   border-radius: 100px;
   background-color: #9DC162;
   right: 0;
+  transition: 0.5s;
 }
 
 .popup-form__btn:hover,
 .send-mail__btn:hover {
-  transition: 0.5s;
   background-color: #7b974f;
 }
 
@@ -336,8 +336,8 @@ nav {
 }
 
 .basket,
-.menu__burger,
-.basket__mobile {
+.menu-burger,
+.mobile__nav-basket {
   max-width: 28px;
   width: 100%;
   min-height: 28px;
@@ -347,13 +347,13 @@ nav {
   background: #FFFFFF url(../svg/basket.svg) no-repeat center/20px;
 }
 
-.menu__burger {
+.menu-burger {
   display: none;
   background-image: url(../svg/menu-mobile.svg);
   background-size: 24px;
 }
 
-.basket__mobile {
+.mobile__nav-basket {
   background-image: url(../svg/basket-mobile.svg);
   background-color: #AE1332;
 }
@@ -373,8 +373,8 @@ nav {
   overflow: hidden;
 }
 
-.nav__mobile,
-.navigation__mobile {
+.mobile,
+.mobile__nav {
   display: none;
 }
 
@@ -416,10 +416,10 @@ nav {
   text-align: center;
   color: #AE1332;
   transform: rotate(-25deg);
+  transition: 1s;
 }
 
 .legend__button>a:hover {
-  transition: 1s;
   color: #A4CB66;
 }
 
@@ -446,7 +446,7 @@ nav {
   background-color: #A4CB66;
 }
 
-.card__fruit {
+.card-fruit {
   max-width: 249px;
   width: 100%;
   display: flex;
@@ -456,19 +456,19 @@ nav {
   border-radius: 500px;
 }
 
-.card__fruit>h2 {
+.card-fruit>h2 {
   margin-bottom: 60px;
   font-size: 12px;
 }
 
-.card__fruit>img {
+.card-fruit>img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin-bottom: 2px;
 }
 
-.card__fruit>p {
+.card-fruit>p {
   max-width: 150px;
   text-align: center;
   text-transform: uppercase;
@@ -538,7 +538,7 @@ nav {
   margin-bottom: 81px;
 }
 
-.instruction__list__item {
+.instruction__list-item {
   max-width: 390px;
   min-height: 128px;
   width: 100%;
@@ -549,39 +549,39 @@ nav {
   background-color: #FFFFFF;
 }
 
-.first__item,
-.second__item,
-.thired__item {
+.first-item,
+.second-item,
+.thired-item {
   transition: 0.7s;
   cursor: pointer;
 }
 
-.first__item {
+.first-item {
   background-color: #AE1332;
 }
 
-.first__item:hover {
+.first-item:hover {
   background-color: #e2264c;
 }
 
-.second__item {
+.second-item {
   background-color: #A1C864;
 }
 
-.second__item:hover {
+.second-item:hover {
   background-color: #c2e984;
 }
 
 
-.thired__item {
+.thired-item {
   background-color: #F5CE13;
 }
 
-.thired__item:hover {
+.thired-item:hover {
   background-color: #f0da70;
 }
 
-.instruction__list__item>span {
+.instruction__list-item>span {
   max-width: 136px;
   width: 100%;
   display: block;
@@ -592,7 +592,7 @@ nav {
   border-radius: 200px;
 }
 
-.instruction__list__item>p {
+.instruction__list-item>p {
   max-width: 170px;
   width: 100%;
   color: #000000;
@@ -603,14 +603,14 @@ nav {
   max-height: 476px;
 }
 
-.instruction__img__mobile {
+.instruction__img-mobile {
   max-width: 860px;
   min-height: 476px;
   display: none;
 }
 
 .instruction__img>img,
-.instruction__img__mobile>img {
+.instruction__img-mobile>img {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -677,10 +677,10 @@ nav {
   font-weight: 500;
   border-radius: 200px;
   background-color: #FFFFFF;
+  transition: 1s;
 }
 
 .fruits__item>button:hover {
-  transition: 1s;
   background-color: #dadada;
 }
 
@@ -728,20 +728,20 @@ nav {
   border-radius: 50%;
   color: #FFFFFF;
   background-color: #9DC262;
+  transition: 1s;
 }
 
 .store__btn:hover {
-  transition: 1s;
   color: #9DC262;
-  background-color: #FFFFFF;
+  background-color: #daeeba;
 }
 
-.store__btn__text {
+.store__btn-text {
   display: flex;
   transform: rotate(-25deg);
 }
 
-.store__btn__text>p {
+.store__btn-text>p {
   margin-left: 5px;
   font-size: 18px;
   font-weight: 500;
@@ -807,7 +807,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.logo__footer {
+.footer__logo-logo {
   margin-left: auto;
   margin-right: auto;
 }
@@ -841,14 +841,17 @@ address {
 
 .link-facebook {
   background-image: url(../svg/fasebook.svg);
+  transition: 1s;
 }
 
 .link-instagram {
   background-image: url(../svg/ins.svg);
+  transition: 1s;
 }
 
 .link-youtube {
   background-image: url(../svg/youtube.svg);
+  transition: 1s;
 }
 
 .link-facebook:hover,
@@ -888,14 +891,14 @@ address>p {
     max-width: 700px;
   }
 
-  .instruction__list__item {
+  .instruction__list-item {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 25px;
     transition: 1s;
   }
 
-  .instruction__list__item:last-child {
+  .instruction__list-item:last-child {
     margin-bottom: 0;
   }
 }
@@ -961,7 +964,7 @@ address>p {
   }
 
 
-  .logo__footer {
+  .footer__logo-logo {
     margin-left: auto;
     margin-right: auto;
   }
@@ -988,7 +991,7 @@ address>p {
     font-size: 28px;
   }
 
-  .popup-form__fruits__item {
+  .popup-form__fruits-item {
     display: flex;
     max-width: 100%;
     max-height: 120px;
@@ -996,7 +999,7 @@ address>p {
     padding: 20px;
   }
 
-  .popup-form__fruits__item>h2 {
+  .popup-form__fruits-item>h2 {
     font-size: 18px;
   }
 
@@ -1020,15 +1023,15 @@ address>p {
     display: none;
   }
 
-  .menu__burger {
+  .menu-burger {
     display: block;
   }
 
-  .basket__mobile {
+  .mobile__nav-basket {
     margin-right: auto;
   }
 
-  .nav__mobile {
+  .mobile {
     display: block;
     width: 100vw;
     height: 100vh;
@@ -1036,7 +1039,7 @@ address>p {
     background-color: #AE1332;
   }
 
-  .navigation__mobile {
+  .mobile__nav {
     max-width: 78px;
     display: flex;
     flex-wrap: wrap;
@@ -1045,7 +1048,7 @@ address>p {
     margin-left: auto;
   }
 
-  .navigation__mobile>.navigation__item__mobile>a {
+  .mobile__nav>.mobile__nav-item>a {
     display: block;
     margin-bottom: 16px;
     font-size: 12px;
@@ -1101,7 +1104,7 @@ address>p {
     display: none;
   }
 
-  .instruction__img__mobile {
+  .instruction__img-mobile {
     display: block;
   }
 

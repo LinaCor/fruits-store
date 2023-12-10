@@ -18,49 +18,33 @@
       <div class="popup-form visually-hidden">
         <div class="popup-form__head">
           <h2>Your Order</h2>
-          <button type="button" class="popup-form__close"></button>
+          <button type="button" class="popup-form__close close-form"></button>
         </div>
         <div class="popup-form__order">
           <ul class="popup-form__fruits">
-            <li class="popup-form__fruits__item straw">
-              <div class="item__contect">
+            <li class="popup-form__fruits-item straw">
+              <div class="popup-form__contect">
                 <h2>Strawberry</h2>
                 <p>Plant</p>
               </div>
-              <div class="item__contect__img">
-                <img src="img/strawberry.png" alt="Strawberry">
-              </div>
-            </li>
-            <li class="popup-form__fruits__item straw">
-              <div class="item__contect">
-                <h2>Strawberry</h2>
-                <p>Plant</p>
-              </div>
-              <div class="item__contect__img">
-                <img src="img/strawberry.png" alt="Strawberry">
-              </div>
-            </li>
-            <li class="popup-form__fruits__item straw">
-              <div class="item__contect">
-                <h2>Strawberry</h2>
-                <p>Plant</p>
-              </div>
-              <div class="item__contect__img">
+              <div class="popup-form__contect-img">
                 <img src="img/strawberry.png" alt="Strawberry">
               </div>
             </li>
           </ul>
         </div>
         <form class="popup-form__form">
-          <input type="text" name="name" placeholder="Enter full name...">
-          <input type="email" name="email" placeholder="Enter email...">
-          <input type="text" name="card" placeholder="Enter card..">
+          <input type="text" name="username" placeholder="Enter full name..." maxlength="50" autocomplete="off"
+            required>
+          <input type="email" name="email" placeholder="Enter email..." autocomplete="off">
+          <input type="text" name="card" placeholder="Enter card.." autocomplete="off">
           <textarea name="comment" placeholder="Enter comments..."></textarea>
           <button type="submit" class="popup-form__btn">Submit</button>
         </form>
       </div>
+
       <div class="popup-order visually-hidden">
-        <button type="button" class="popup-order__close"></button>
+        <button type="button" class="popup-order__close close-form"></button>
         <div class="popup-order__img">
           <img src="img/popup.png" alt="Strawberry">
         </div>
@@ -81,17 +65,17 @@
           <a href="#0"><img src="svg/nav.svg" alt=""></a>
           <p>fresh harvest box</p>
         </div>
-        <button type="button" class="basket"><span class="visually-hidden">корзина
+        <button type="button" class="basket open-basket"><span class="visually-hidden">корзина
           </span></button>
-        <button type="button" class="menu__burger"><span class="visually-hidden">меню
+        <button type="button" class="menu-burger"><span class="visually-hidden">меню
           </span></button>
       </nav>
-      <nav class="nav__mobile">
-        <ul class="navigation__mobile">
-          <li class="navigation__item__mobile"><a href="#manual">How It Works</a></li>
-          <li class="navigation__item__mobile"><a href="#choice">Fruits</a></li>
-          <li class="navigation__item__mobile"><a href="#Contacts">Contacts</a></li>
-          <button type="button" class="basket__mobile"><span class="visually-hidden">корзина
+      <nav class="mobile visually-hidden">
+        <ul class="mobile__nav">
+          <li class="mobile__nav-item"><a href="#manual">How It Works</a></li>
+          <li class="mobile__nav-item"><a href="#choice">Fruits</a></li>
+          <li class="mobile__nav-item"><a href="#Contacts">Contacts</a></li>
+          <button type="button" class="mobile__nav-basket open-basket"><span class="visually-hidden">корзина
             </span></button>
         </ul>
       </nav>
@@ -108,14 +92,14 @@
           <div class="card-left">
             <p>Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether
               you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
-            <div class="card-left__fruit card__fruit">
+            <div class="card-left__fruit card-fruit">
               <h2>Fruit</h2>
               <img src="img/watermelon.png" alt="">
               <p>Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
             </div>
           </div>
           <div class="card-right">
-            <div class="card-right__fruit card__fruit">
+            <div class="card-right__fruit card-fruit">
               <h2>Fruit</h2>
               <img src="img/order_1.png" alt="">
               <p>Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and
@@ -139,23 +123,23 @@
           a thoughtful gift, our
           fruit baskets are the perfect choice.</p>
         <ul class="instruction__list">
-          <li class="instruction__list__item">
-            <span class="first__item">First Step</span>
+          <li class="instruction__list-item">
+            <span class="first-item">First Step</span>
             <p>Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
           </li>
-          <li class="instruction__list__item">
-            <span class="second__item">Second Step</span>
+          <li class="instruction__list-item">
+            <span class="second-item">Second Step</span>
             <p>Click on the basket and fill out the form.</p>
           </li>
-          <li class="instruction__list__item">
-            <span class="thired__item">Third Step</span>
+          <li class="instruction__list-item">
+            <span class="thired-item">Third Step</span>
             <p>Sit back and relax! Your fresh fruit basket will be delivered.</p>
           </li>
         </ul>
         <div class="instruction__img">
           <img src="img/decorate_1.jpg" alt="fruit photo">
         </div>
-        <div class="instruction__img__mobile">
+        <div class="instruction__img-mobile">
           <img src="img/decorate_1_mobile.jpg" alt="fruit photo">
         </div>
       </section>
@@ -241,7 +225,7 @@
           </li>
         </ul>
         <button class="store__btn">
-          <div class="store__btn__text">
+          <div class="store__btn-text">
             <img src="svg/arrow.svg" alt="">
             <p>ORDER</p>
           </div>
@@ -266,7 +250,7 @@
       <div class="footer" id="Contacts">
         <div class="footer__logo">
           <img src="img/footer_girls.png" alt="">
-          <div class="logo logo__footer">
+          <div class="logo footer__logo-logo">
             <a href=""><img src="svg/nav.svg" alt=""></a>
             <p>fresh harvest box</p>
           </div>
@@ -302,6 +286,7 @@
     </footer>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/menu-burger.js"></script>
 </body>
 
 </html>
