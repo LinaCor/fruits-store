@@ -165,16 +165,17 @@ body {
 .popup-form__fruits {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 12px;
 }
 
 .popup-form__fruits-item {
+  display: flex;
+  flex-direction: column;
   max-width: 257px;
   width: 100%;
   max-height: 308px;
   height: 100%;
-  padding: 40px 20px 15px 20px;
+  padding: 20px 20px 15px 20px;
   border-radius: 20px;
 }
 
@@ -191,6 +192,22 @@ body {
 
 .item__contect>p {
   margin-bottom: 4px;
+}
+
+.popup-form__contect {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form__contect-btn {
+  max-width: 15px;
+  width: 100%;
+  min-height: 15px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  background: url(../svg/x-white.svg) no-repeat center/20px;
 }
 
 .popup-form__contect-img {
@@ -996,7 +1013,6 @@ address>p {
   }
 
   .popup-form__fruits-item {
-    display: flex;
     max-width: 100%;
     max-height: 120px;
     height: 100%;
@@ -1019,7 +1035,7 @@ address>p {
     margin-right: 0;
   }
 
-  .nav-desktop {
+  .nav-desk {
     display: none;
   }
 

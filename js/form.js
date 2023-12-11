@@ -7,6 +7,7 @@ const sendForm = document.querySelector('.popup-form__form');
 const popupThanks = document.querySelector('.popup-order');
 const testInput = document.querySelector('.test input');
 const inputNameValue = document.querySelector('.popup-form__form input[name="username"]');
+const basketList = document.querySelector('.popup-form__fruits');
 
 const isKeyEscape = (evt) => evt.key === 'Escape';
 
@@ -25,7 +26,7 @@ const onClickOutsideBasket = (evt) => {
 
 const validateInputName = () => {
   const arr = inputNameValue.value.split(' ');
-  return validate = arr.every((el) => { return VALID_SYMBOLS.test(el); });
+  return arr.every((el) => { return VALID_SYMBOLS.test(el); });
 }
 
 function openBasketModal() {
@@ -59,6 +60,7 @@ sendForm.addEventListener('submit', (evt) => {
     formOrder.classList.add('visually-hidden');
     popupThanks.classList.remove('visually-hidden');
     form.reset();
+    basketList.innerHTML = '';
   } else {
     inputNameValue.style.border = '2px solid red';
   }
