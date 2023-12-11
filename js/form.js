@@ -8,6 +8,9 @@ const popupThanks = document.querySelector('.popup-order');
 const testInput = document.querySelector('.test input');
 const inputNameValue = document.querySelector('.popup-form__form input[name="username"]');
 const basketList = document.querySelector('.popup-form__fruits');
+const fruitPriceBtns = Array.from(document.querySelectorAll('.fruits__item button'));
+const arrPrice = fruitPriceBtns.map((el) => { return el.textContent });
+
 
 const isKeyEscape = (evt) => evt.key === 'Escape';
 
@@ -61,6 +64,9 @@ sendForm.addEventListener('submit', (evt) => {
     popupThanks.classList.remove('visually-hidden');
     form.reset();
     basketList.innerHTML = '';
+    for (let i = 0; i < fruitPriceBtns.length; i++) {
+      fruitPriceBtns[i].textContent = arrPrice[i];
+    }
   } else {
     inputNameValue.style.border = '2px solid red';
   }
