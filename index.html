@@ -34,8 +34,7 @@
           </ul>
         </div>
         <form class="popup-form__form">
-          <input type="text" name="username" placeholder="Enter full name..." maxlength="50" autocomplete="off"
-            required>
+          <input type="text" name="username" placeholder="Enter full name..." autocomplete="off" required>
           <input type="email" name="email" placeholder="Enter email..." autocomplete="off">
           <input type="text" name="card" placeholder="Enter card.." autocomplete="off">
           <textarea name="comment" placeholder="Enter comments..."></textarea>
@@ -56,7 +55,7 @@
     </div>
     <header>
       <nav>
-        <ul class="navigation">
+        <ul class="navigation nav-desk">
           <li class="navigation__item"><a href="#manual">How It Works</a></li>
           <li class="navigation__item"><a href="#choice">Fruits</a></li>
           <li class="navigation__item"><a href="#Contacts">Contacts</a></li>
@@ -285,6 +284,19 @@
       </div>
     </footer>
   </div>
+
+  <template id="fruit">
+    <li class="popup-form__fruits-item straw">
+      <div class="popup-form__contect">
+        <h2>Strawberry</h2>
+        <p>Plant</p>
+      </div>
+      <div class="popup-form__contect-img">
+        <img src="img/strawberry.png" alt="Strawberry">
+      </div>
+    </li>
+  </template>
+
   <script src="js/script.js"></script>
   <script src="js/menu-burger.js"></script>
 </body>
