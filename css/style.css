@@ -159,7 +159,31 @@ body {
 }
 
 .popup-form__order {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.popup-form__order-left-btn,
+.popup-form__order-right-btn {
+  width: 35px;
+  margin-right: 10px;
+  background: #FFFFFF url(../svg/left-arrow-form.svg) no-repeat center/30px;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 20px;
+}
+
+.popup-form__order-right-btn {
+  margin-right: 0;
+  margin-left: 10px;
+  background: #FFFFFF url(../svg/right-arrow-form.svg) no-repeat center/30px;
+}
+
+.popup-form__order-left-btn:hover,
+.popup-form__order-right-btn:hover {
+  background-color: #f3f3f3;
 }
 
 .popup-form__fruits {
@@ -171,7 +195,7 @@ body {
 .popup-form__fruits-item {
   display: flex;
   flex-direction: column;
-  max-width: 257px;
+  max-width: 250px;
   width: 100%;
   max-height: 308px;
   height: 100%;

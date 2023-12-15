@@ -2,12 +2,11 @@ const VALID_SYMBOLS = /^[а-яa-z]+$/i;
 const basket = document.querySelectorAll('.open-basket');
 const bckgrndPopup = document.querySelector('.popup-mask');
 const formOrder = document.querySelector('.popup-form');
-const formCloseBtn = document.querySelectorAll('.close-form');
-const sendForm = document.querySelector('.popup-form__form');
+const sendForm = formOrder.querySelector('.popup-form__form');
+const inputNameValue = formOrder.querySelector('.popup-form__form input[name="username"]');
+const basketList = formOrder.querySelector('.popup-form__fruits');
+const formCloseBtns = document.querySelectorAll('.close-form');
 const popupThanks = document.querySelector('.popup-order');
-const testInput = document.querySelector('.test input');
-const inputNameValue = document.querySelector('.popup-form__form input[name="username"]');
-const basketList = document.querySelector('.popup-form__fruits');
 const fruitPriceBtns = Array.from(document.querySelectorAll('.fruits__item button'));
 const arrPrice = fruitPriceBtns.map((el) => { return el.textContent });
 
@@ -51,7 +50,7 @@ for (let bsk of basket) {
   bsk.addEventListener('click', openBasketModal);
 }
 
-for (let btn of formCloseBtn) {
+for (let btn of formCloseBtns) {
   btn.addEventListener('click', closeBasketModal);
 }
 
