@@ -10,10 +10,10 @@ let appendFruits = [];
 let appendFruitsMax = [];
 
 
-let drawFruitCards = function (arr) {
+const drawFruitCards = (arr) => {
+  basketList.innerHTML = '';
   appendFruitsMax = Array.from(arr).slice(0, 3);
   appendFruitsMax.forEach((el) => basketList.append(el));
-  console.log(arr, appendFruitsMax)
 
   if (arr.length > 3) {
     leftBtnForm.classList.remove('visually-hidden');
@@ -22,20 +22,20 @@ let drawFruitCards = function (arr) {
     leftBtnForm.classList.add('visually-hidden');
     rightBtnForm.classList.add('visually-hidden');
   }
-}
+};
 
 
-let addCheckHandler = function (item, itemButton, price) {
+const addCheckHandler = (item, itemButton, price) => {
   let closeFruitCard = item.querySelector('.popup-form__contect-btn');
   closeFruitCard.addEventListener('click', function () {
     item.remove();
-    appendFruits = appendFruits.filter(el => el !== item)
+    appendFruits = appendFruits.filter(el => el !== item);
+    basketList.innerHTML = '';
+    drawFruitCards(appendFruits);
     itemButton.textContent = price;
     itemButton.disabled = false;
-    drawFruitCards(appendFruits);
   });
 };
-
 
 for (let btn of fruitsBtns) {
   btn.addEventListener('click', (evt) => {
@@ -57,27 +57,37 @@ for (let btn of fruitsBtns) {
   })
 }
 
+
 leftBtnForm.addEventListener('click', function () {
   let firstAppendFruitsMax = Number(appendFruitsMax[0].dataset.id);
   let firstAppendFruits = Number(appendFruits[0].dataset.id);
+  let firstElem = appendFruits.findIndex(el => el.dataset.id === appendFruitsMax[0].dataset.id);
 
   if (!(firstAppendFruitsMax === firstAppendFruits)) {
     basketList.innerHTML = '';
-    appendFruitsMax = Array.from(appendFruits).slice(firstAppendFruitsMax - 3, firstAppendFruitsMax);
+    appendFruitsMax = Array.from(appendFruits).slice(firstElem - 3, firstElem);
     appendFruitsMax.forEach((el) => basketList.append(el));
   }
-})
+});
+
 
 rightBtnForm.addEventListener('click', function () {
   let lastAppendFruitsMax = Number(appendFruitsMax[appendFruitsMax.length - 1].dataset.id);
   let lastAppendFruits = Number(appendFruits[appendFruits.length - 1].dataset.id);
+  let lastElem = appendFruits.findIndex(el => el.dataset.id === appendFruitsMax[appendFruitsMax.length - 1].dataset.id);
 
   if (!(lastAppendFruitsMax === lastAppendFruits)) {
     basketList.innerHTML = '';
-    appendFruitsMax = Array.from(appendFruits).slice(lastAppendFruitsMax + 1, lastAppendFruitsMax + 4);
+    appendFruitsMax = Array.from(appendFruits).slice(lastElem + 1, lastElem + 4);
     appendFruitsMax.forEach((el) => basketList.append(el));
   }
-})
+});
+
+
+
+
+
+
 
 
 

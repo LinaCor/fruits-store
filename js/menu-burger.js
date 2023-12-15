@@ -8,11 +8,11 @@ btnMenuBurger.addEventListener('click', () => {
   } else {
     document.body.style.removeProperty('position');
   }
-})
+});
 
 menuBurger.addEventListener('click', (evt) => {
   if (evt.target.closest('.mobile__nav')) {
     menuBurger.classList.add('visually-hidden');
     document.body.style.removeProperty('position');
   }
-})
+});

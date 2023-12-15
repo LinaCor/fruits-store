@@ -29,7 +29,7 @@ const onClickOutsideBasket = (evt) => {
 const validateInputName = () => {
   const arr = inputNameValue.value.split(' ');
   return arr.every((el) => { return VALID_SYMBOLS.test(el); });
-}
+};
 
 function openBasketModal() {
   formOrder.classList.remove('visually-hidden');

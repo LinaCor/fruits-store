@@ -165,6 +165,11 @@ body {
   position: relative;
 }
 
+.popup-form__order-container {
+  max-width: 720px;
+  width: 100%;
+}
+
 .popup-form__order-left-btn,
 .popup-form__order-right-btn {
   width: 35px;
@@ -196,6 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 250px;
+  min-width: 80px;
   width: 100%;
   max-height: 308px;
   height: 100%;
@@ -955,6 +961,31 @@ address>p {
     background: #FFFFFF url(../img/order_girls.png) no-repeat 100% 100%/270px;
   }
 
+  .popup-form__fruits {
+    gap: 5px;
+  }
+
+  .popup-form__fruits-item {
+    padding: 10px 10px 5px 10px;
+  }
+
+  .popup-form__order-left-btn,
+  .popup-form__order-right-btn {
+    width: 25px;
+    margin-right: 5px;
+    background: #FFFFFF url(../svg/left-arrow-form.svg) no-repeat center/20px;
+  }
+
+  .popup-form__order-right-btn {
+    margin-right: 0;
+    margin-left: 5px;
+    background: #FFFFFF url(../svg/right-arrow-form.svg) no-repeat center/20px;
+  }
+
+  .popup-form__contect>h2 {
+    font-size: 14px;
+  }
+
   .navigation {
     flex-wrap: wrap;
   }
@@ -1030,21 +1061,34 @@ address>p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
 
   .popup-form__head>h2 {
     font-size: 28px;
   }
 
+  .popup-form__fruits {
+    flex-direction: column;
+  }
+
   .popup-form__fruits-item {
     max-width: 100%;
-    max-height: 120px;
+    max-height: 140px;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .popup-form__contect-btn {
+    margin-bottom: 0;
   }
 
   .popup-form__fruits-item>h2 {
     font-size: 18px;
+  }
+
+  .popup-form__contect-img {
+    max-width: 90px;
+    max-height: 80px;
   }
 
   .popup-form {
