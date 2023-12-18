@@ -7,6 +7,7 @@ const inputNameValue = formOrder.querySelector('.popup-form__form input[name="us
 const basketList = formOrder.querySelector('.popup-form__fruits');
 const formCloseBtns = document.querySelectorAll('.close-form');
 const popupThanks = document.querySelector('.popup-order');
+const openBasketBtn = document.querySelector('.store__btn');
 const fruitPriceBtns = Array.from(document.querySelectorAll('.fruits__item button'));
 const arrPrice = fruitPriceBtns.map((el) => { return el.textContent });
 
@@ -45,6 +46,8 @@ function closeBasketModal() {
   document.removeEventListener('keydown', onEscPress);
   document.removeEventListener('click', onClickOutsideBasket);
 }
+
+openBasketBtn.addEventListener('click', openBasketModal);
 
 for (let bsk of basket) {
   bsk.addEventListener('click', openBasketModal);
