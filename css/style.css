@@ -200,11 +200,10 @@ body {
 .popup-form__fruits-item {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 220px;
   min-width: 80px;
   width: 100%;
-  max-height: 308px;
-  height: 100%;
+  max-height: 250px;
   padding: 20px 20px 15px 20px;
   border-radius: 20px;
 }
@@ -966,6 +965,8 @@ address>p {
   }
 
   .popup-form__fruits-item {
+    max-width: 200px;
+    max-height: 220px;
     padding: 10px 10px 5px 10px;
   }
 

@@ -1,4 +1,5 @@
 const formOrder = document.querySelector('.popup-form');
+const sendForm = formOrder.querySelector('.popup-form__form');
 const basketList = formOrder.querySelector('.popup-form__fruits');
 const leftBtnForm = formOrder.querySelector('.popup-form__order-left-btn');
 const rightBtnForm = formOrder.querySelector('.popup-form__order-right-btn');
@@ -81,6 +82,11 @@ rightBtnForm.addEventListener('click', function () {
     appendFruitsMax = Array.from(appendFruits).slice(lastElem + 1, lastElem + 4);
     appendFruitsMax.forEach((el) => basketList.append(el));
   }
+});
+
+sendForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  appendFruits.length = 0;
 });
 
 

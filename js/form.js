@@ -68,6 +68,7 @@ sendForm.addEventListener('submit', (evt) => {
     basketList.innerHTML = '';
     for (let i = 0; i < fruitPriceBtns.length; i++) {
       fruitPriceBtns[i].textContent = arrPrice[i];
+      fruitPriceBtns[i].disabled = false;
     }
   } else {
     inputNameValue.style.border = '2px solid red';
